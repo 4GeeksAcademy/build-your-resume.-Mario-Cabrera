@@ -1,5 +1,11 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+    margin-top: 8px;
 }
 .resume{
     margin: auto;
@@ -39,20 +45,157 @@ div.resume-body{
     background-color: cyan;
 }
 footer.resume-footer{
-    background-color: blue;
+    background-color: #d0f5fc;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.line{
+    display: flex;
+}
+.timeline {
+  background: var(--primary-color);
+  margin-left: 5px;
+  padding: 20px;
+  padding-left:0 ;
+  display: flex;
+  flex-direction: column;
+}
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: #333;
+  color: gray;
+  border-radius: 8px;
+  max-width: 400px;
+}
+.info {
+  display: flex;
+  gap: 10px;
+  border-left: 2px solid #333;
+  flex-direction: column;
+  width: 88%;
+}
+.place{
+  display: flex;
+  margin: 0 0 0 30px;
+  color: rgb(0, 153, 255);
+  justify-content: space-between;
+}
+.grades{
+  display: flex;
+  margin: 0 0 0 50px;
+}
+.title {
+  color: orangered;
+  position: relative;
+  margin: 15px 0 0 30px;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid black;
+}
+.chrono{
+    display: flex;
+}
+.date{
+    width: 12%;
+}
+.date pre{
+    color: gray;
+}
+.grades{
+    font-size: 15px;
+}
+.name h2{
+    margin: 0;
+}
+footer .gmail{
+    margin: 5px 3px 5px 3px;
+    float: right;
+}
+.formation{
+    float: left;
+    width: 55%; 
+    background: #ffffff;
+    padding: 0 20px;
+
+}
+.formation .education{
+    display: flex;
+    margin-top: 20px;
+}
+.formation .experience{
+    display: flex;
+    margin-top: 20px;
+}
+.formation div i{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.formation div h2{
+    margin: 0;
+}
+.formation h3{
+    margin-bottom:10px;
+}
+.formation ul{
+    margin:0;
+    padding-left: 20px;
+}
+.skills{
+    float: left;
+    width: 45%; 
+    background: #ffffff;
+    padding: 0 20px;
+}
+.skills .skill{
+    display: flex;
+    margin-top: 20px;
+}
+.skills div i{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+button{
+    border-radius: 5px;
+    background: rgb(0, 140, 255);
+    border:none;
     padding: 5px;
+    text-align: center;
+    text-decoration: none;
 }
-.resume-body div:first-child{
-    float: left;
-    width: 60%;
-    height: 300px; 
-    background: #ccc;
-    padding: 20px;
+.button{
+    margin-bottom: 15px;
 }
-.resume-body div:last-child{
-    float: left;
-    width: 40%;
-    height: 300px; 
-    background: #00d9ff;
-    padding: 20px;
+.work-experience .work{
+    display: flex;
+    margin-top: 20px;
+}
+.work-experience div i{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.work-title {
+  color: rgb(0, 0, 0);
+  position: relative;
+  margin: 15px 0 0 30px;
+}
+.work-title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: black;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid black;
 }
