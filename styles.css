@@ -9,7 +9,7 @@ body{
 }
 .resume{
     margin: auto;
-    width: 55%;
+    width: 48%;
     padding: 0;
     background-color: black;
 }
@@ -198,4 +198,7 @@ button{
   border-radius: 999px;
   left: -39px;
   border: 3px solid black;
+}
+.gmail-footer a{
+    margin-right: 5px;
 }
